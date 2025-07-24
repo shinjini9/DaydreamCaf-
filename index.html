@@ -4,50 +4,127 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daydream Café</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom, #e0f7ff, #ffffff);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #cceeff;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: '☁️ ';
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #cceeff;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #0077cc;
+    }
+
+    .cloud-bg {
+      background: url('https://www.transparenttextures.com/patterns/cloudy-day.png');
+    }
+  </style>
 </head>
-<body>
-  <div class="cloud-bg">
-    <header>
-      <h1>☁️ Daydream Café ☁️</h1>
-      <p>Your cozy escape for coffee, pastries, and peace.</p>
-    </header>
+<body class="cloud-bg">
 
-    <section class="about">
-      <h2>☁️ About Us</h2>
-      <p>
-        Tucked away in a quiet corner of town, Daydream Café is a light and airy space made for coffee lovers, sweet tooths, and cloud chasers. Come float away with us.
-      </p>
-    </section>
+  <header>
+    <h1>☁️ Daydream Café ☁️</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
 
-    <section class="menu">
-      <h2>🍰 Our Cloudy Favorites</h2>
-      <ul>
-        <li>☁️ Blueberry Cloud Latte</li>
-        <li>🌈 Dreamy Lemon Tart</li>
-        <li>🌸 Rose Milk Tea</li>
-        <li>🍓 Strawberry Cheesecake Croissant</li>
-        <li>🌿 Vanilla Matcha Swirl</li>
-      </ul>
-    </section>
+  <section id="about">
+    <h2>✨ About Us</h2>
+    <p>Tucked away in a quiet corner of town, Daydream Café is a light and airy space made for coffee lovers, sweet tooths, and cloud chasers. Come float away with us.</p>
+  </section>
 
-    <section class="hours">
-      <h2>🕒 Hours</h2>
-      <p>Mon – Fri: 8am – 6pm</p>
-      <p>Sat – Sun: 9am – 5pm</p>
-    </section>
+  <section id="menu">
+    <h2>🍰 Our Cloudy Favorites</h2>
+    <ul>
+      <li>Blueberry Cloud Latte</li>
+      <li>🌈 Dreamy Lemon Tart</li>
+      <li>🌹 Rose Milk Tea</li>
+      <li>🍓 Strawberry Cheesecake Croissant</li>
+      <li>🍵 Vanilla Matcha Swirl</li>
+    </ul>
+  </section>
 
-    <section class="contact">
-      <h2>📍 Visit Us</h2>
-      <p>123 Dreamy Lane, Dublin, CA</p>
-      <p>Email: hello@daydreamcafe.com</p>
-      <p>Instagram: <a href="#">@daydream.cafe</a></p>
-    </section>
+  <section id="hours">
+    <h2>🕒 Hours</h2>
+    <p>Mon – Fri: 8am – 6pm</p>
+    <p>Sat – Sun: 9am – 5pm</p>
+  </section>
 
-    <footer>
-      <p>☁️ Made with love by Daydream Café © 2025</p>
-    </footer>
+  <section id="visit">
+    <h2>📍 Visit Us</h2>
+    <p>123 Dreamy Lane, Dublin, CA</p>
+    <p>Email: hello@daydreamcafe.com</p>
+    <p>Instagram: <a href="https://instagram.com/daydream.cafe" target="_blank">@daydream.cafe</a></p>
+  </section>
+
+  <div class="footer">
+    ☁️ Made with love by Daydream Café © 2025
   </div>
+
 </body>
 </html>
